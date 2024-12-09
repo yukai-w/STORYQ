@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORYQ</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+ 
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+ 
+        .button-container {
+            position: absolute;
+            z-index: 1000; 
+        }
+        
+        .button-container button {
+          width: 60px;
+          height: 60px;
+        }
+
+        .button-container button img {
+            /* width: 100%;  */
+            height: 59%; 
+            object-fit: cover; 
+        }
+ 
+        .iframe-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+ 
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button onclick="location.href='https://x.com/'">
+              <img src="./image.png" alt="Icon">
+            </button>
+            <button onclick="location.href='https://www.pump.fun'">
+              <img src="./image2.png" alt="Icon">
+            </button>
+        </div>
+        <div class="iframe-container">
+            <iframe src="https://lafabriqueasouvenirs.ca/en/"></iframe>
+        </div>
+    </div>
+</body>
+</html>
